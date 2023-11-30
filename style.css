@@ -33,6 +33,18 @@
   justify-content: center; /* Centra horizontalmente */
   font-weight: 300;
 }
+.barra-uno2{
+  width: 350px;
+  height: 13px;
+  background-color: #76B8B4;
+  margin: 0;
+}
+
+.contenedor-barra-uno2 {
+  display: flex;
+  justify-content: left; /* Centra horizontalmente */
+  font-weight: 300;
+}
 
 .contenedor-principal {
   display: flex;
