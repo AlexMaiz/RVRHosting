@@ -3,14 +3,12 @@
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script>
-          document.querySelector('.sin-borde').addEventListener('click', function() {
-              document.querySelector('.rectangulo').scrollIntoView({ behavior: 'smooth' });
-          });
-          </script>
-          
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">         
       </head>
+      <style>* {
+       /* border: 1px solid black;*/
+      }
+      </style>
 <body class="fondo">
   <br><br>
   <div class="rectangulo" style="margin: 0;">
@@ -19,24 +17,25 @@
         <div class="bordes-derecha" style="color: white; text-align: right;"><i class="fa fa-instagram"></i></div>
   </div>
 <!----------------------------------------------------------------------------------------------------------------------------------------->
-  <div class="rectangulo2" style="margin: 0;">
+  <div class="rectangulo2" style="margin: 0;box-shadow: 0 4px 2px -2px gray;">
       <div class="bordes-izquierda">
         <button class="sin-borde"><img src="./assets/logo-sin-fondo.png" alt="" height="93px" width="140px"></button>
       </div>
       <div>
-          <button class="sin-borde" style="color: #498B87;">INICIO</button>
+        <button class="sin-borde inicio" style="color: #498B87;">INICIO</button>
+    </div>
+    
+      <div>
+        <button class="sin-borde nosotros" style="color: #498B87; ">NOSOTROS</button>
       </div>
       <div>
-        <button class="sin-borde" style="color: #498B87; ">NOSOTROS</button>
+        <button class="sin-borde servicios" style="color: #498B87;">SERVICIOS</button>
       </div>
       <div>
-        <button class="sin-borde" style="color: #498B87;">SERVICIOS</button>
-      </div>
-      <div>
-        <button class="sin-borde" style="color: #498B87;">FAQ</button>
+        <button class="sin-borde consultas" style="color: #498B87;">CONSULTAS</button>
       </div>
       <div class="bordes-derecha">
-        <button class="sin-borde" style="background-color: #498B87;width: 200px; height: 50px;color: white;">CONTACTANOS</button>
+        <button class="sin-borde contactanos" style="background-color: #498B87;width: 200px; height: 50px;color: white;">CONTACTANOS</button>
       </div>
   </div>
 <!----------------------------------------------------------------------------------------------------------------------------------------->
@@ -44,13 +43,17 @@
       <div class="bordes-izquierda-derecha">
         <h1 style="font-size: 29px;font-family: Arial, Helvetica, sans-serif;color: #4b817c;">VENTA E INSTALACION DE CALEFACCION EN TODA LA REGION METROPOLITANA</h1>
         <h3 style="font-weight: 300; font-family: Arial, Helvetica, sans-serif;color: #4b817c;">Contamos con Personal capacitado y certificado</h3>
-        <button class="sin-borde" style="background-color: #498B87;width: 200px; height: 50px;color: white; font-size: medium;">VER SERVICIOS</button>
+        <button class="sin-borde servicios2" style="background-color: #498B87;width: 200px; height: 50px;color: white; font-size: medium;">VER SERVICIOS</button>
       </div>
+      
     </div>
+    
 <!----------------------------------------------------------------------------------------------------------------------------------------->
-  <div style="background-color: white;">
-  <br>
+  <div style="background-color: white;" ><div  class="nosotros-barra"></div>
+  <br><br>
+  
   <div class="contenedor-barra-uno">
+   
     <div class="barra-uno"></div>
   </div>  
   </div>
@@ -77,17 +80,17 @@
         </p>
       </div>
       <br>
-      <button class="sin-borde" style="background-color: #498B87;width: 200px; height: 50px;color: white;">CONTACTANOS</button>
+      <button class="sin-borde contactanos2" style="background-color: #498B87;width: 200px; height: 50px;color: white;">CONTACTANOS</button>
     </div>
     
     <!-- Crea un div para la imagen a la derecha -->
     <img class="imagen-derecha" src="./assets/pareja-aire-edit.png" alt="Descripción de la imagen" width="600px">
   </div>
-  <br><br>
+  <br><br><br><br>
   </div>
-  <br>
+  <br><br>
 <!----------------------------------------------------------------------------------------------------------------------------------------->
-<div style="background-color: #EFEEEE">
+<div style="background-color: #EFEEEE"><div  class="servicio-barra"></div><div  class="servicio-barra2"></div>
   <div class="contenedor-barra-uno">
     <div class="barra-uno"></div>
   </div>  
@@ -131,32 +134,32 @@
   <div style="background-color: #ffffff">
     <div class="contenedor-barra-uno">
       <div class="barra-uno"></div>
-    </div>  
+    </div>
   </div>
   <h1 style="font-weight: bold; font-size: 29px; text-align: center; font-family: Arial, Helvetica, sans-serif;color: #4b817c;">COMO TRABAJAMOS</h1>
   <div class="rectangulo5">
     <div class="small-rectangle">
-      <img src="icon1.png" alt="Icon 1">
+      <i class="fa fa-check-circle-o" aria-hidden="true" style="font-size: 24px; color:#498B87;margin-bottom: 20px;"></i>
       <div class="text" style="font-family: Arial, Helvetica, sans-serif;">Evaluación técnica presencial, donde evaluamos las distintas variables de acuerdo a lo que necesita nuestros clientes.</div>
     </div>
     <div class="small-rectangle">
-      <img src="icon2.png" alt="Icon 2">
+      <i class="fa fa-pencil-square-o" aria-hidden="true" style="font-size: 24px; color:#498B87;margin-bottom: 20px;"></i>
       <div class="text" style="font-family: Arial, Helvetica, sans-serif;">Exponemos las distintas alternativas de climatización factibles para su domicilio o empresa.</div>
     </div>
     <div class="small-rectangle">
-      <img src="icon3.png" alt="Icon 3">
+      <i class="fa fa-calendar" aria-hidden="true" style="font-size: 24px; color: #498B87;margin-bottom: 20px;"></i>
       <div class="text" style="font-family: Arial, Helvetica, sans-serif;">Agendamos la instalación o el mantenimiento en un horario disponible y conveniente para usted.</div>
     </div>
     <div class="small-rectangle">
-      <img src="icon4.png" alt="Icon 4">
+      <i class="fa fa-wrench" aria-hidden="true" style="font-size: 24px; color: #498B87;margin-bottom: 20px;"></i>
       <div class="text" style="font-family: Arial, Helvetica, sans-serif;">Puede realizar con nuestro equipo todos los mantenimientos preventivos a sus equipos de climatización.</div>
     </div>
   </div>
-  <br><br>
+  <br><br><br><br>
 </div>
 <!----------------------------------------------------------------------------------------------------------------------------------------->
-<div style="background-color: #EFEEEE">
-  <br><br>
+<div style="background-color: #EFEEEE"><div class="consultas-barra"></div>
+  <br>
   <div class="contenedor-barra-uno">
     <div class="barra-uno"></div>
   </div>  
@@ -195,9 +198,10 @@
     </div>
   </div>
 </div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <!----------------------------------------------------------------------------------------------------------------------------------------->
 <div class="rectangulo7" style="position: relative;">
+  <div  class="contactanos-barra"></div>
   <div class="bordes-izquierda-derecha" style="margin: 50px;">
     <h1 style="font-size: 35px;font-family: Arial, Helvetica, sans-serif;color: rgb(255, 230, 0);">QUIERES COTIZAR</h1>
     <h3 style="font-size: 40px; font-family: Arial, Helvetica, sans-serif;color: #ffffff;">OBTEN LA MEJOR SOLUCION A LA CLIMATIZACION DE AMBIENTES</h3>
@@ -272,9 +276,42 @@
   </div>
 </div>
 
-
+<script>
+  document.querySelector('.inicio').addEventListener('click', function() {
+      document.querySelector('.rectangulo3').scrollIntoView({ behavior: 'smooth' });
+  });
+  document.querySelector('.nosotros').addEventListener('click', function() {
+    var rectangulo = document.querySelector('.nosotros-barra');
+    var posicion = rectangulo.offsetTop - 120; // Ajusta este valor según tus necesidades
+    window.scrollTo({ top: posicion, behavior: 'smooth' });
+  });
+  document.querySelector('.servicios').addEventListener('click', function() {
+    var rectangulo = document.querySelector('.servicio-barra');
+    var posicion = rectangulo.offsetTop - 130; // Ajusta este valor según tus necesidades
+    window.scrollTo({ top: posicion, behavior: 'smooth' });
+  });
+  document.querySelector('.servicios2').addEventListener('click', function() {
+    var rectangulo = document.querySelector('.servicio-barra2');
+    var posicion = rectangulo.offsetTop - 130; // Ajusta este valor según tus necesidades
+    window.scrollTo({ top: posicion, behavior: 'smooth' });
+  });
+  document.querySelector('.consultas').addEventListener('click', function() {
+    var rectangulo = document.querySelector('.consultas-barra');
+    var posicion = rectangulo.offsetTop - 130; // Ajusta este valor según tus necesidades
+    window.scrollTo({ top: posicion, behavior: 'smooth' });
+  });
+  document.querySelector('.contactanos').addEventListener('click', function() {
+    var rectangulo = document.querySelector('.rectangulo7');
+    var posicion = rectangulo.offsetTop - 130; // Ajusta este valor según tus necesidades
+    window.scrollTo({ top: posicion, behavior: 'smooth' });
+  });
+  document.querySelector('.contactanos2').addEventListener('click', function() {
+    var rectangulo = document.querySelector('.rectangulo7');
+    var posicion = rectangulo.offsetTop - 130; // Ajusta este valor según tus necesidades
+    window.scrollTo({ top: posicion, behavior: 'smooth' });
+  });
+  </script>
 </body>
 
   
 </html>
- 
